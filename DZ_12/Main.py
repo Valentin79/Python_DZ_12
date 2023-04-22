@@ -1,0 +1,16 @@
+from Student import *
+
+student_1 = Student("Иван", "Иванов", "Иванович")
+print(student_1)
+student_1.give_a_grade("математика", 4, 3, 4)
+student_1.give_a_grade("Физика", 4, 4, 4, 5)
+student_1.give_a_grade("математика", 5)
+print(student_1.all_table_grades)
+student_1.mean_table_grade()
+student_2 = Student("Петр", "Петров", "Петрович")
+student_2.give_a_grade("Математика", 3, 4, 3)
+print(student_2.all_table_grades)
+student_1.give_a_ball("Математика", 77, 80, 81)
+student_2.give_a_ball("Физика", 69, 72, 79, 74)
+print(student_2.all_table_balls)
+student_1.mean_table_grade()
